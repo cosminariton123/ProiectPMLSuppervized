@@ -61,7 +61,7 @@ def tuning():
     best_config = None
 
     try:
-        for _ in tqdm(range(10)):
+        for _ in tqdm(range(30)):
             hidden_layer_sizes = [np.random.randint(1, 1000) for _ in range(np.random.randint(1, 5))]
             hidden_layer_sizes = tuple(hidden_layer_sizes)
 
